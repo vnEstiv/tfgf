@@ -1,0 +1,621 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+
+body{
+  font-family: 'Lunasima', sans-serif;
+}
+
+.BookHead{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+.BookHead__content{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.BookHead__logo img {
+  height: 110px;
+}
+
+.BookHead__cent{
+
+  display: flex ;
+  justify-content: center ;
+  
+}
+
+.BookHead__cent a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.BookHead__cent a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #cb2e2e;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.BookHead__cent a:hover::after {
+  transform: scaleX(1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#mencen{
+
+font-size: 30px;  
+margin: 30px;
+
+}
+
+.BookHead__text{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.Friend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Friend i {
+  font-size: 35px;
+  
+}
+
+.Friend.user-icon{
+  padding-right: 40px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #303030;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  color: #a5a5a5;
+}
+
+.searchTerm:focus{
+  color: #303030;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #cb2e2e;
+  background: #cb2e2e;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Book__Intro{
+  height: 900px;
+  position: relative;
+  background-image: url(bookpile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.Book__Intro .Book__title {
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+
+}
+
+.Book__title {
+
+  font-size: 70px;
+  width: max-content;
+  padding-bottom: 10px;
+
+}
+
+.Book__subtitle{
+  font-size: 60px;
+  color: #cb2e2e;
+  padding-bottom: 60px;
+
+}
+
+#title__tex {
+ font-size: 30px;
+ width: 730px;
+ padding-bottom: 60px;
+
+}
+
+.Book__Intro .Book__Content {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 7rem;
+  margin-left: 8rem;
+  max-width: 120px;
+
+
+}
+
+@keyframes fadeInAnimation
+{
+   from { 
+   opacity: 0;
+   }
+
+   to {
+   opacity: 1;
+   }
+}
+
+.BookOne{
+  padding-top: 50px;
+  gap: 70px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Toriel{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+/* SCROLL DOWN ANIMATION */
+
+@keyframes show{
+  from{
+    opacity: 0;
+    scale:25%;
+  }
+
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.imalbd{
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.Book__title{
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.Book__subtitle{
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.button-65{
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.Books__info {
+  
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+/* CSS */
+
+.firston {
+  
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #272727;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.firston:hover {
+  background-color: #ed2f2f; 
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.firston:hover:after {
+  opacity: .5;
+}
+
+.firston:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.firston:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .firston {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
+
+
+
+
+.button-65 {
+  
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #272727;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-65:hover {
+  background-color: #ed2f2f; 
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-65:hover:after {
+  opacity: .5;
+}
+
+.button-65:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-65:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .button-65 {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
+
+.BookTwo{
+  padding-top: 50px;
+  gap: 70px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Book__Text{
+padding-bottom: 80px;
+}
+
+.Book__news{
+
+  max-width: 1500px;
+  margin: auto;
+
+}
+
+.imalbd img{
+  height: 500px;
+}
+
+
+
+.redline{
+  background: #ed2f2f;
+  height: 50px;
+  margin-bottom: 60px;
+}
+
+.BookFoot__content{
+
+  background: black;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Foot__content{
+
+  
+  display: flex;
+
+}
+
+.logon2{
+
+  height: 200px;
+    position: relative;
+    right: 81px;
+    top: 40px;
+
+
+}
+
+.group {
+  margin: 30px;
+}
+
+#menutitle {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#menulist {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* COMPRAR */
+
+.Buy__info{
+  padding-bottom: 15px;
+
+}
+
+#Book__title{
+  font-size: 50px;
+  padding-bottom: 15px;
+
+}
+
+#Book__autor{
+  font-size: 40px;
+}
+
+.Book__select{
+  max-width: 1400px;
+  margin: auto;
+
+}
+
+.front {
+  display: flex;
+  margin-top: 100px;
+
+}
+
+.Rec__trio{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+}
+
+.Rec__buttons {
+
+  border:3.5px solid #cb2e2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-right: 35px;
+  width: 50%;
+ 
+
+}
+
+#icons_move{
+  width: 20%;
+}
+
+/* MAP ZONE */
+
+.Gec__buttons {
+
+  border:3.5px solid #525252;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+.Gec__buttons:hover span {
+  display: none;
+}
+
+.Gec__buttons:hover:before {
+  content: "Proximanente";
+
+ 
+}
+
+.map {
+
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+
+}
+
+
+/* SOBRE NOSOTROS */
+
+.Book__sto{
+
+  max-width: 1000px;
+  margin: auto;
+}
+
+#imline img{
+  position: relative;
+  height: 500px;
+  padding-bottom: 40px;
+  left: 15%;
+
+
+}
+
+.LINES {
+
+  margin-bottom: 60px;
+ 
+}
+
+#shadbla{
+  height: 30px;
+  background-color: black;
+  margin-bottom: 30px;
+}
+
+#shadred{
+
+  position: relative;
+  background-color: #ed2f2f;
+  height: 30px;
+  width: 50%;
+  text-align: center;
+  left: 25%;
+  
+}
+
+
+.Book__twopart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.So__par{
+  text-align: center;
+}
